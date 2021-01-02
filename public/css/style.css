@@ -1,0 +1,18 @@
+/* GENERAL STUFF */
+:root {
+  --bg: white;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15pt;
+  background: var(--bg);
+}
