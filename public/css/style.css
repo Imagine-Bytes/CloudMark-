@@ -1,7 +1,7 @@
 /* GENERAL STUFF */
 :root {
   --bg: #e5e5e5;
-  --p-color: #fca311;
+  --prim-color: #fca311;
   --alt-color: #757575;
   --white: #f9f9f9;
   --black: #000000;
@@ -23,9 +23,14 @@ html {
 }
 
 body {
-  font-size: 15pt;
   background: var(--bg);
   font-family: var(--main-font);
+  /* FOR STICKING OF ADRESS BAR ON MOBILE BROWSERS */
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 h2 {
