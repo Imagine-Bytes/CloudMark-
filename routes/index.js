@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 // Welcome Page
-router.get("/", (req, res) => res.render("test"));
+router.get("/", (req, res) => res.render("dashboard"));
 
 //404
 // router.get("/*", (req, res) => res.render("404"));

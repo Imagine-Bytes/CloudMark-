@@ -1,6 +1,10 @@
 /* GENERAL STUFF */
 :root {
   --bg: white;
+  --light-grey: #e7e7e7;
+  --dark-grey: #a4a4a4;
+  --darker-grey:  #545353;
+  --orange: orange;
 }
 
 *,
@@ -14,5 +18,13 @@
 
 body {
   font-size: 15pt;
-  background: var(--bg);
+  background: var(--light-grey);
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  
+  /* FOR STICKING OF ADRESS BAR ON MOBILE BROWSERS */
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
