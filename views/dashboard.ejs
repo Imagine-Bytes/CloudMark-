@@ -1,15 +1,18 @@
 <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <% include('partials/header') %>
+<main>
     <div>
         <% const today = new Date() %>
         <% const hour = today.getHours() %>
         <% let period = hour < 12 ? 'Morning' : (hour < 16 ? 'Afternoon' : 'Evening') %>
 
         <h1>Good <%= period %>, Victor</h1>  
-        <div class="search-box">
-            <input type="search" name="search" id="search">
-        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="search" name="search" id="search">
+            </div>
+        </div>  
 
         <div id="links">
             <% for( let i = 0; i < 16; i++ ) { %>
@@ -20,3 +23,4 @@
             <% } %>
         </div>
     </div>
+</main>
