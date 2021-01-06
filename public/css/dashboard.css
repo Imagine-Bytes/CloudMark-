@@ -1,52 +1,51 @@
 body {
-    display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 2.5em;
-    text-align: center;
-    color: var(--orange);
-    margin: 1.5em 0;
-    width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+  color: var(--prim-color);
+  margin: 1.5em 0;
+  width: 100%;
 }
 
 .search-box {
-    margin: 0 20px;
-    max-width: 450px;
-    text-align: center;
+  margin: 0 20px;
+  max-width: 450px;
+  text-align: center;
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
 }
 
 #links {
-    margin: 50px 40px;
-    max-width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin: 50px 40px;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .entry {
-    margin: 10px;
+  margin: 10px;
 }
 
 .icons {
-    height: 50px;
-    width: 50px;
-    background: white;
-    border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border-radius: 50%;
 }
 
 .text {
-    height: 10px;
-    width: 50px;
-    border-radius: 10px;
-    margin: 10px 0;
-    background: white;
+  height: 10px;
+  width: 50px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: white;
 }
