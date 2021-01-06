@@ -1,6 +1,12 @@
 /* GENERAL STUFF */
 :root {
-  --bg: white;
+  --bg: #e5e5e5;
+  --p-color: #fca311;
+  --alt-color: #757575;
+  --white: #f9f9f9;
+  --black: #000000;
+  --main-font: "Open Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
 *,
@@ -12,7 +18,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-size: 15pt;
   background: var(--bg);
+  font-family: var(--main-font);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+main {
+  font-size: 1.25rem;
 }
