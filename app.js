@@ -1,22 +1,26 @@
 const express = require("express");
+const config = require("./config/config")
 const expressLayouts = require("express-ejs-layouts");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser")
 const app = express();
 
-// DB Config
-const db = require("./config/keys").mongoURI;
 
-// Connect to MongoDB
+const connectionString = config.URI;
+
+//Configure MongoDB Database
 mongoose
-    .connect(db, {
-        useCreateIndex: true,
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
-    .then(() => console.log("MongoDB Connected"))
-    .catch((err) => console.log(err));
+  .connect(connectionString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((response) => {
+    console.log("MongoDB Database Running Successfully");
+  })
+  .catch((err) => {
+    console.log("Database Connection Failed ");
+  });
 
 // EJS
 app.use(expressLayouts);
@@ -29,8 +33,8 @@ app.use(express.urlencoded({ extended: true }));
 //To handle cors errors
 app.use(cors());
 
-app.use(express.static("public"));
-//app.use("/static", express.static(path.resolve(__dirname, "public")));
+// app.use(express.static("public"));
+// //app.use("/static", express.static(path.resolve(__dirname, "public")));
 
 // Routes
 app.use("/", require("./routes/index.js"));

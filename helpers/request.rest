@@ -1,0 +1,7 @@
+POST https://linkifyserver.herokuapp.com/login
+Content-Type: application/json
+
+{
+    "username":"bro",
+    "password":"testing"
+}

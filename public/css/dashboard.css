@@ -24,10 +24,10 @@ h1 {
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
 }
 
 #links {
@@ -39,7 +39,7 @@ input {
 }
 
 .entry {
-    margin: 10px;
+  margin: 10px;
 }
 
 .icons {

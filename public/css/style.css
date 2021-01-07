@@ -1,10 +1,12 @@
 /* GENERAL STUFF */
 :root {
-  --bg: white;
-  --light-grey: #e7e7e7;
-  --dark-grey: #a4a4a4;
-  --darker-grey:  #545353;
-  --orange: orange;
+  --bg: #e5e5e5;
+  --prim-color: #fca311;
+  --alt-color: #757575;
+  --white: #f9f9f9;
+  --black: #000000;
+  --main-font: "Open Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
 *,
@@ -16,15 +18,29 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
-  font-size: 15pt;
-  background: var(--light-grey);
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
-  
+  background: var(--bg);
+  font-family: var(--main-font);
   /* FOR STICKING OF ADRESS BAR ON MOBILE BROWSERS */
   height: 100vh;
   width: 100vw;
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+main {
+  font-size: 1.25rem;
 }
