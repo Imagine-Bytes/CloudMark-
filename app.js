@@ -34,7 +34,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // app.use(express.static("public"));
-// //app.use("/static", express.static(path.resolve(__dirname, "public")));
+// app.use("/static", express.static(path.resolve(__dirname, "public")));
 
 // Routes
 app.use("/", require("./routes/index.js"));
